@@ -85,6 +85,11 @@
           ]
         },
         {
+          "name": "register",
+          "pattern": "register",
+          "target": ["TargetRegister"]        
+        },
+        {
           "name": "login",
           "pattern": "login",
           "target": ["TargetLogin"]        
@@ -107,6 +112,13 @@
           "clearControlAggregation": false,
           "viewId": "Home",
           "viewName": "Home"
+        },
+        "TargetRegister": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "register",
+          "viewName": "Register"
         },
         "TargetLogin": {
           "viewType": "XML",
