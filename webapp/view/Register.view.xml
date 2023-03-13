@@ -2,7 +2,19 @@
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
     <Page id="page" title="Register">
-        <content />
-        <Label text="This is Register Page"/>
+        <content>
+        <VBox fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center">
+            <items>
+                <Label text="Geben Sie bitte die folgenden Daten ein" />
+                <Input placeholder="Vorname" />
+                <Input placeholder="Nachname" />
+                <Input placeholder="Email Adresse" type="email"/>
+                <Input placeholder="Password" type="password" />
+                <Button width="12rem" text="Registrieren" type="Emphasized" />
+                <Link text="Haben Sie bereits einen Account?" press="GotoLogin" />
+                
+            </items>
+        </VBox>
+        </content>
     </Page>
 </mvc:View>

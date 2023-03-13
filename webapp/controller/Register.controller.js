@@ -10,6 +10,10 @@ sap.ui.define([
         return Controller.extend("bookingsystem.controller.Register", {
             onInit: function () {
 
+            },
+            GotoLogin: function(){
+                var oRouter= sap.ui.core.UIComponent.getRouterFor(this);
+                oRouter.navTo("login", {})
             }
         });
     });

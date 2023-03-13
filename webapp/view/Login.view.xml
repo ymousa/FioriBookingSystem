@@ -1,8 +1,15 @@
-<mvc:View controllerName="bookingsystem.controller.Login"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
+<mvc:View controllerName="bookingsystem.controller.Login" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
     <Page id="page" title="Login">
-        <content />
-        <Label text="This is Login Page"/>
+        <content>
+        <VBox fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center">
+            <items>
+                <Label text="Geben Sie bitte den Benutzername und das Password" />
+                <Input placeholder="Benutzername" />
+                <Input placeholder="Password" type="password" />
+                <Button width="12rem" text="Anmelden" type="Emphasized" />
+                <Link text="Haben Sie keinen Account?" press="GotoRegister" />
+            </items>
+        </VBox>
+        </content>
     </Page>
 </mvc:View>
