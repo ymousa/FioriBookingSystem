@@ -1,0 +1,8 @@
+<mvc:View controllerName="bookingsystem.controller.AccountDeatails"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="Account Deatails">
+        <content />
+        <Label text="This is AccountDeatails Page"/>
+    </Page>
+</mvc:View>

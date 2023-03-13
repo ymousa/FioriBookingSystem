@@ -11,9 +11,12 @@ sap.ui.define([
             onInit: function () {
 
             },
+            _getRouter: function(){
+                return sap.ui.core.UIComponent.getRouterFor(this);
+
+            },
             toLogin: function(){
-                var oRouter= sap.ui.core.UIComponent.getRouterFor(this);
-                oRouter.navTo("login", {})
+                this._getRouter().navTo("login", {})
             }
         });
     });

@@ -87,7 +87,17 @@
         {
           "name": "login",
           "pattern": "login",
-          "target": ["login"]        
+          "target": ["TargetLogin"]        
+        },
+        {
+          "name": "accountDetails",
+          "pattern": "accountDetails",
+          "target": ["TargetAccountDetails"]        
+        },
+        {
+          "name": "book",
+          "pattern": "book",
+          "target": ["TargetBook"]        
         }
       ],
       "targets": {
@@ -98,12 +108,25 @@
           "viewId": "Home",
           "viewName": "Home"
         },
-        "login": {
+        "TargetLogin": {
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
           "viewId": "login",
           "viewName": "Login"
+        },"TargetAccountDetails": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "accountDetails",
+          "viewName": "AccountDetails"
+        },
+        "TargetBook": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "book",
+          "viewName": "Book"
         }
       }
     },
