@@ -1,0 +1,8 @@
+<mvc:View controllerName="bookingsystem.controller.Login"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="Login">
+        <content />
+        <Label text="This is Login Page"/>
+    </Page>
+</mvc:View>
